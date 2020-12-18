@@ -22,9 +22,18 @@ public class TestLargest {
 	/** add tests to check for this unit test **/	
     }
 
-	
+	@Test
 	public void testNegative(){
-        /** add tests to check for this unit test **/ 
+        int[] arr = new int[4];
+        arr[0] = -11;
+        arr[1] = -9;
+        arr[2] = -7;
+        arr[3] = -10;
+        Largest temp1 = new Largest();
+        int maxValue = temp1.largest(arr);
+        int expected = -7;
+        Assert.assertEquals("Values was not max", expected,  maxValue);
+        
 	}
 
 }
